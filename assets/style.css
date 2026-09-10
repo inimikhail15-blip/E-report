@@ -28,3 +28,7 @@ section {
         width: 100%;
     }
 }
+
+.kategori {
+    background-color:  rgba(0, 0, 0, 0.5);
+}
