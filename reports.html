@@ -25,6 +25,7 @@
      <!-- animate.css -->
      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+
      
   </head>
   <body>
@@ -79,10 +80,17 @@
      <section id="reports">
       <div class="container">
         <!-- judul -->
-        <div class="text-center">
+        <div class="d-flex flex-column flex-lg-row text-center text-lg-start align-items-center justify-content-between gap-2">
+          <div class="col-lg-8">
             <h1 class="fw-bold text-primary-emphasis">All Reports</h1>
             <p class="text-secondary lh-lg">lihat semua laporan yang telah dikirim,filter berdasarkan katergori atau cari laporan tertentu</p>
         </div>
+        <div class="col-lg-2">
+          <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-plus"></i> Tambah Laporan
+          </button>
+        </div>
+          </div>
 
         <!-- filter -->
         <div class="row gap-3 gap-md-0 mt-5">
@@ -273,6 +281,50 @@
 
       </div>
      </section>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white fw-semibold">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fa-solid fa-pen-to-square"></i>Formulir Tambah Laporan</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="">
+              <div class="modal-body p-5">
+                Laporkan Aduan anda!!!
+                <div class="mb-3">
+                  <label class="form-label Fw-semibold" for="">Judul Laporan</label>
+                  <input class="form-control shadow-sm" type="text" placeholder="tulis judul laporan...">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label Fw-semibold" for="">Pilih Kategori</label>
+                  <select class="form-select shadow-sm">
+                    <option value="">Pilih Kategori</option>
+                    <option value="pendidikan">Pendidikan</option>
+                    <option value="fasilitas">Fasilitas</option>
+                    <option value="anonymous">Anonymous</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label Fw-semibold" for="">Isi Laporan</label>
+                  <textarea rows="6" class="form-control shadow-sm" placeholder="Tulis Laporan Anda..."></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label Fw-semibold" for="">Upload Gambar</label>
+                  <input class="form-control shadow-sm" type="file" accept="image/*">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa-solid fa-paper-plane"></i> Kirim Sekarang
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
     <!-- footer -->
     <footer class="bg-primary-subtle">
