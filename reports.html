@@ -20,17 +20,22 @@
     <link rel="stylesheet" href="./assets/style.css" />
 
     <!-- font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-     
-     <!-- animate.css -->
-     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
 
-
-     
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="animate__animated animate__fadeInDownBig navbar navbar-expand-lg bg-primary-subtle py-4">
+    <nav
+      class="animate__animated animate__fadeInDownBig navbar navbar-expand-lg bg-primary-subtle py-4"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -55,21 +60,34 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-primary active" aria-current="page" href="index.html#hero">Home</a>
+              <a
+                class="nav-link text-primary active"
+                aria-current="page"
+                href="index.html#hero"
+              >
+                Home
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="index.html#about">About</a>
+              <a class="nav-link text-primary" href="index.html#about">
+                About
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="index.html#services">Services</a>
+              <a class="nav-link text-primary" href="index.html#services">
+                Services
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="index.html#recent">Recent</a>
+              <a class="nav-link text-primary" href="index.html#recent">
+                Recent
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-primary" href="index.html#FAQ">FAQ</a>
             </li>
-             
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="panduan.html">Guide</a>
             </li>
           </ul>
         </div>
@@ -77,298 +95,589 @@
     </nav>
 
     <!-- semua laporan -->
-     <section id="reports">
+    <section id="reports">
       <div class="container">
         <!-- judul -->
-        <div class="d-flex flex-column flex-lg-row text-center text-lg-start align-items-center justify-content-between gap-2">
+        <div
+          class="d-flex flex-column flex-lg-row text-center text-lg-start align-items-center justify-content-between gap-2"
+        >
           <div class="col-lg-8">
             <h1 class="fw-bold text-primary-emphasis">All Reports</h1>
-            <p class="text-secondary lh-lg">lihat semua laporan yang telah dikirim,filter berdasarkan katergori atau cari laporan tertentu</p>
-        </div>
-        <div class="col-lg-2">
-          <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <i class="fa-solid fa-plus"></i> Tambah Laporan
-          </button>
-        </div>
+            <p class="text-secondary lh-lg">
+              lihat semua laporan yang telah dikirim,filter berdasarkan
+              katergori atau cari laporan tertentu
+            </p>
           </div>
+          <div class="col-lg-2">
+            <button
+              class="btn btn-primary w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i class="fa-solid fa-plus"></i> Tambah Laporan
+            </button>
+          </div>
+        </div>
 
         <!-- filter -->
         <div class="row gap-3 gap-md-0 mt-5">
-            <div class="col-md-4">
-            <input type="text" class="form-control" placeholder="Cari Laporan...">
-            </div>
-            <div class="col">
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Cari Laporan..."
+            />
+          </div>
+          <div class="col">
             <select class="form-select">
-                <option value="">pilih kategori</option>
-                <option value="pendidikan">Pendidikan</option>
-                <option value="anonymous">Anonymous</option>
-                <option value="fasilitas">Fasilitas</option>
+              <option value="">pilih kategori</option>
+              <option value="pendidikan">Pendidikan</option>
+              <option value="anonymous">Anonymous</option>
+              <option value="fasilitas">Fasilitas</option>
             </select>
-            </div>
-            <div class="col">
+          </div>
+          <div class="col">
             <select class="form-select">
-                <option value="">Urutkan</option>
-                <option value="pendidikan">Terbaru</option>
-                <option value="anonymous">Terlama</option>
+              <option value="">Urutkan</option>
+              <option value="pendidikan">Terbaru</option>
+              <option value="anonymous">Terlama</option>
             </select>
-            </div>
-            <div class="col-md-2">
-            <button class=" btn btn-primary w-100">
-                <i class="fa-solid fa-filter"></i>
-                Filter
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary w-100">
+              <i class="fa-solid fa-filter"></i>
+              Filter
             </button>
-            </div>
+          </div>
         </div>
 
         <!-- laporan -->
         <div class="row mt-5">
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card">
-                  <div class="kategori position-absolute px-3 py-2">
-                    <a class=" text-white text-decoration-none" href="">Fasilitas</a>
-                  </div>
-            <img style="height: 300px; object-fit: cover; overflow: hidden;" src="./assets/images/aduan 1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Kondisi Ompreng Makanan di Kantin Sekolah yang Tidak Layak dan Kotor</h5>
-              <small >by: <a class="text-decoration-none" href="">Mikhail aqeela hassan</a> 1 hour ago</small>
-              <p class="card-text mt-4">Laporan pengaduan ini diajukan terkait temuan ompreng atau wadah makanan katering yang kotor dan tidak memenuhi standar kebersihan bagi para siswa. Melalui aduan ini, pihak pengelola fasilitas katering sekolah diminta untuk segera mengevaluasi kebersihan peralatan makan demi kesehatan dan kenyamanan siswa di lingkungan sekolah.</p>
-              
-              <a href="detail-report-2.html" class="btn btn-primary">selengkapnya</a>
-            </div>
-          </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card">
-                  <div class="kategori position-absolute px-3 py-2">
-                    <a class=" text-white text-decoration-none" href="">Anonymous</a>
-                  </div>
-            <img style="height: 300px; object-fit: cover; overflow: hidden;" src="./assets/images/aduan 2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Aksi Pencurian Kendaraan Bermotor di Permukiman Warga yang Terekam CCTV</h5>
-              <small >by: <a class="text-decoration-none" href="">Anonymous</a> 10 minute ago</small>
-              <p class="card-text mt-4">Laporan pengaduan ini disampaikan secara anonim untuk melaporkan tindak kejahatan pencurian kendaraan bermotor milik warga yang berhasil terekam jelas oleh kamera pengawas (CCTV). Melalui laporan rahasia ini, warga berharap pihak berwenang dapat segera melacak dan memburu pelaku tanpa harus mengkhawatirkan keamanan atau identitas pelapor yang dirahasiakan.</p>
-              
-              <a href="#" class="btn btn-primary">selengkapnya</a>
-            </div>
-          </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card">
-                  <div class="kategori position-absolute px-3 py-2">
-                    <a class=" text-white text-decoration-none" href="">Pendidikan</a>
-                  </div>
-            <img style="height: 300px; object-fit: cover; overflow: hidden;" src="./assets/images/aduan 3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Perluas Literasi Digital, Program IDN Mengajar Hadirkan Kolaborasi Pembelajaran IT untuk Sekolah</h5>
-              <small >by: <a class="text-decoration-none" href="">Siswa IDN</a> 5 seconds ago</small>
-              <p class="card-text mt-4">Program IDN Mengajar hadir sebagai solusi inovatif untuk meningkatkan literasi digital di kalangan siswa sekolah. Dengan kolaborasi antara pihak sekolah dan industri teknologi, program ini bertujuan untuk memberikan pemahaman yang lebih baik tentang penggunaan teknologi informasi dan komunikasi (TIK) dalam pembelajaran.</p>
-              
-              
-              <a href="detail-report-3.html" class="btn btn-primary">selengkapnya</a>
-            </div>
-          </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card">
-                  <div class="kategori position-absolute px-3 py-2">
-                    <a class=" text-white text-decoration-none" href="">Anonymous</a>
-                  </div>
-            <img style="height: 300px; object-fit: cover; overflow: hidden;" src="./assets/images/aduan 4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Fathan dilibas motor Anime</h5>
-              <small >by: <a class="text-decoration-none" href="">Anonymous</a> 5 minutes ago</small>
-              <p class="card-text mt-4">Berdasarkan situasi jalan raya yang rawan dan minim pengawasan terhadap pengendara di bawah umur, seorang anak bernama Fathan justru menjadi korban tabrakan fatal dari arah belakang saat sedang berada di jalur tersebut. Insiden traumatis yang terekam dalam dokumentasi visual ini memperlihatkan detik-detik sebelum benturan keras terjadi, memicu keprihatinan mendalam publik serta desakan atas pertanggungjawaban penuh dari pihak pengendara motor dan satpam sekolah yang lalai.</p>
-              
-              
-              <a href="detail-report.html" class="btn btn-primary">selengkapnya</a>
-            </div>
-          </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card">
-                  <div class="kategori position-absolute px-3 py-2">
-                    <a class=" text-white text-decoration-none" href="">Anonymous</a>
-                  </div>
-            <img style="height: 300px; object-fit: cover; overflow: hidden;" src="./assets/images/aduan 5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">beberapa siswa kedapatan merokok di lingkungan sekolah</h5>
-              <small >by: <a class="text-decoration-none" href="">Anonymous</a> 5 seconds ago</small>
-              <p class="card-text mt-4">Berdasarkan sistem pengawasan internal sekolah yang menuntut penegakan kedisiplinan dan pembentukan karakter moral yang ketat, beberapa oknum siswa justru bertindak indisipliner dan mengabaikan tata tertib dengan kedapatan merokok di area lembaga pendidikan. Pelanggaran berat yang mencoreng citra institusi ini memicu keprihatinan mendalam dari pihak manajemen sekolah serta desakan akan pemberian sanksi tegas, yang menjadi satu-satunya instrumen utama dalam memberikan efek jera serta memulihkan lingkungan belajar yang bersih dan sehat.</p>
-              
-              
-              <a href="#" class="btn btn-primary">selengkapnya</a>
-            </div>
-          </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card">
-                  <div class="kategori position-absolute px-3 py-2">
-                    <a class=" text-white text-decoration-none" href="">Fasilitas</a>
-                  </div>
-            <img style="height: 300px; object-fit: cover; overflow: hidden;" src="./assets/images/aduan 6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ketiadaan Router WiFi di salah satu Ruang Kelas SMK Jurusan RPL Kelas 10</h5>
-              <small >by: <a class="text-decoration-none" href="">Fasilitas</a> 30 minutes ago</small>
-              <p class="card-text mt-4">Laporan pengaduan ini diajukan terkait ketiadaan fasilitas jaringan internet berupa router WiFi di ruang kelas SMK jurusan Rekayasa Perangkat Lunak (RPL). Melalui aduan ini, pihak sarana dan prasarana sekolah diminta untuk segera menyediakan perangkat jaringan tersebut, mengingat akses internet yang stabil sangat krusial untuk menunjang kelancaran praktik pemrograman dan kegiatan belajar mengajar siswa.</p>
-              
-              
-              <a href="#" class="btn btn-primary">selengkapnya</a>
-            </div>
-          </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card">
-                  <div class="kategori position-absolute px-3 py-2">
-                    <a class=" text-white text-decoration-none" href="">Anonymous</a>
-                  </div>
-            <img style="height: 300px; object-fit: cover; overflow: hidden;" src="./assets/images/aduan 4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">fathan ketabrak motor</h5>
-              <small >by: <a class="text-decoration-none" href="">Anonymous</a> 5 minutes ago</small>
-              <p class="card-text mt-4">Berdasarkan situasi jalan raya yang rawan dan minim pengawasan terhadap pengendara di bawah umur, seorang anak bernama Fathan justru menjadi korban tabrakan fatal dari arah belakang saat sedang berada di jalur tersebut. Insiden traumatis yang terekam dalam dokumentasi visual ini memperlihatkan detik-detik sebelum benturan keras terjadi, memicu keprihatinan mendalam publik serta desakan atas pertanggungjawaban penuh dari pihak pengendara motor yang lalai.</p>
-              
-              
-              <a href="detail-report.html" class="btn btn-primary">selengkapnya</a>
-            </div>
-          </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card">
-                  <div class="kategori position-absolute px-3 py-2">
-                    <a class=" text-white text-decoration-none" href="">Anonymous</a>
-                  </div>
-            <img style="height: 300px; object-fit: cover; overflow: hidden;" src="./assets/images/aduan 5.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">beberapa siswa kedapatan merokok di lingkungan sekolah</h5>
-              <small >by: <a class="text-decoration-none" href="">Anonymous</a> 5 seconds ago</small>
-              <p class="card-text mt-4">Berdasarkan sistem pengawasan internal sekolah yang menuntut penegakan kedisiplinan dan pembentukan karakter moral yang ketat, beberapa oknum siswa justru bertindak indisipliner dan mengabaikan tata tertib dengan kedapatan merokok di area lembaga pendidikan. Pelanggaran berat yang mencoreng citra institusi ini memicu keprihatinan mendalam dari pihak manajemen sekolah serta desakan akan pemberian sanksi tegas, yang menjadi satu-satunya instrumen utama dalam memberikan efek jera serta memulihkan lingkungan belajar yang bersih dan sehat.</p>
-              
-              
-              <a href="#" class="btn btn-primary">selengkapnya</a>
-            </div>
-          </div>
-            </div>
-            <div class="col-lg-4 col-md-6 mb-3">
-                <div class="card">
-                  <div class="kategori position-absolute px-3 py-2">
-                    <a class=" text-white text-decoration-none" href="">Fasilitas</a>
-                  </div>
-            <img style="height: 300px; object-fit: cover; overflow: hidden;" src="./assets/images/aduan 6.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Ketiadaan Router WiFi di salah satu Ruang Kelas SMK Jurusan RPL Kelas 10</h5>
-              <small >by: <a class="text-decoration-none" href="">Fasilitas</a> 30 minutes ago</small>
-              <p class="card-text mt-4">Laporan pengaduan ini diajukan terkait ketiadaan fasilitas jaringan internet berupa router WiFi di ruang kelas SMK jurusan Rekayasa Perangkat Lunak (RPL). Melalui aduan ini, pihak sarana dan prasarana sekolah diminta untuk segera menyediakan perangkat jaringan tersebut, mengingat akses internet yang stabil sangat krusial untuk menunjang kelancaran praktik pemrograman dan kegiatan belajar mengajar siswa.</p>
-              
-              
-              <a href="#" class="btn btn-primary">selengkapnya</a>
-            </div>
-          </div>
-            </div>
-          </div>
-
-          <!-- pagination -->
-           <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
-        </nav>
-
-        
-
-      </div>
-     </section>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-primary text-white fw-semibold">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fa-solid fa-pen-to-square"></i>Formulir Tambah Laporan</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <form action="">
-              <div class="modal-body p-5">
-                Laporkan Aduan anda!!!
-                <div class="mb-3">
-                  <label class="form-label Fw-semibold" for="">Judul Laporan</label>
-                  <input class="form-control shadow-sm" type="text" placeholder="tulis judul laporan...">
-                </div>
-                <div class="mb-3">
-                  <label class="form-label Fw-semibold" for="">Pilih Kategori</label>
-                  <select class="form-select shadow-sm">
-                    <option value="">Pilih Kategori</option>
-                    <option value="pendidikan">Pendidikan</option>
-                    <option value="fasilitas">Fasilitas</option>
-                    <option value="anonymous">Anonymous</option>
-                  </select>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label Fw-semibold" for="">Isi Laporan</label>
-                  <textarea rows="6" class="form-control shadow-sm" placeholder="Tulis Laporan Anda..."></textarea>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label Fw-semibold" for="">Upload Gambar</label>
-                  <input class="form-control shadow-sm" type="file" accept="image/*">
-                </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="kategori position-absolute px-3 py-2">
+                <a class="text-white text-decoration-none" href="">
+                  Fasilitas
+                </a>
               </div>
-              <div class="modal-footer">
-                <button type="reset" class="btn btn-secondary">Reset</button>
-                <button type="submit" class="btn btn-primary">
-                  <i class="fa-solid fa-paper-plane"></i> Kirim Sekarang
-                </button>
+              <img
+                style="height: 300px; object-fit: cover; overflow: hidden"
+                src="./assets/images/aduan 1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Kondisi Ompreng Makanan di Kantin Sekolah yang Tidak Layak dan
+                  Kotor
+                </h5>
+                <small>
+                  by:
+                  <a class="text-decoration-none" href="">
+                    Mikhail aqeela hassan
+                  </a>
+                  1 hour ago
+                </small>
+                <p class="card-text mt-4">
+                  Laporan pengaduan ini diajukan terkait temuan ompreng atau
+                  wadah makanan katering yang kotor dan tidak memenuhi standar
+                  kebersihan bagi para siswa. Melalui aduan ini, pihak pengelola
+                  fasilitas katering sekolah diminta untuk segera mengevaluasi
+                  kebersihan peralatan makan demi kesehatan dan kenyamanan siswa
+                  di lingkungan sekolah.
+                </p>
+                <a href="detail-report-2.html" class="btn btn-primary">
+                  selengkapnya
+                </a>
               </div>
-            </form>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="kategori position-absolute px-3 py-2">
+                <a class="text-white text-decoration-none" href="">
+                  Anonymous
+                </a>
+              </div>
+              <img
+                style="height: 300px; object-fit: cover; overflow: hidden"
+                src="./assets/images/aduan 2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Aksi Pencurian Kendaraan Bermotor di Permukiman Warga yang
+                  Terekam CCTV
+                </h5>
+                <small>
+                  by:
+                  <a class="text-decoration-none" href="">Anonymous</a>
+                  10 minute ago
+                </small>
+                <p class="card-text mt-4">
+                  Laporan pengaduan ini disampaikan secara anonim untuk
+                  melaporkan tindak kejahatan pencurian kendaraan bermotor milik
+                  warga yang berhasil terekam jelas oleh kamera pengawas (CCTV).
+                  Melalui laporan rahasia ini, warga berharap pihak berwenang
+                  dapat segera melacak dan memburu pelaku tanpa harus
+                  mengkhawatirkan keamanan atau identitas pelapor yang
+                  dirahasiakan.
+                </p>
+                <a href="#" class="btn btn-primary">selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="kategori position-absolute px-3 py-2">
+                <a class="text-white text-decoration-none" href="">
+                  Pendidikan
+                </a>
+              </div>
+              <img
+                style="height: 300px; object-fit: cover; overflow: hidden"
+                src="./assets/images/aduan 3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Perluas Literasi Digital, Program IDN Mengajar Hadirkan
+                  Kolaborasi Pembelajaran IT untuk Sekolah
+                </h5>
+                <small>
+                  by:
+                  <a class="text-decoration-none" href="">Siswa IDN</a>
+                  5 seconds ago
+                </small>
+                <p class="card-text mt-4">
+                  Program IDN Mengajar hadir sebagai solusi inovatif untuk
+                  meningkatkan literasi digital di kalangan siswa sekolah.
+                  Dengan kolaborasi antara pihak sekolah dan industri teknologi,
+                  program ini bertujuan untuk memberikan pemahaman yang lebih
+                  baik tentang penggunaan teknologi informasi dan komunikasi
+                  (TIK) dalam pembelajaran.
+                </p>
+                <a href="detail-report-3.html" class="btn btn-primary">
+                  selengkapnya
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="kategori position-absolute px-3 py-2">
+                <a class="text-white text-decoration-none" href="">
+                  Anonymous
+                </a>
+              </div>
+              <img
+                style="height: 300px; object-fit: cover; overflow: hidden"
+                src="./assets/images/aduan 4.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fathan dilibas motor Anime</h5>
+                <small>
+                  by:
+                  <a class="text-decoration-none" href="">Anonymous</a>
+                  5 minutes ago
+                </small>
+                <p class="card-text mt-4">
+                  Berdasarkan situasi jalan raya yang rawan dan minim pengawasan
+                  terhadap pengendara di bawah umur, seorang anak bernama Fathan
+                  justru menjadi korban tabrakan fatal dari arah belakang saat
+                  sedang berada di jalur tersebut. Insiden traumatis yang
+                  terekam dalam dokumentasi visual ini memperlihatkan
+                  detik-detik sebelum benturan keras terjadi, memicu
+                  keprihatinan mendalam publik serta desakan atas
+                  pertanggungjawaban penuh dari pihak pengendara motor dan
+                  satpam sekolah yang lalai.
+                </p>
+                <a href="detail-report.html" class="btn btn-primary">
+                  selengkapnya
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="kategori position-absolute px-3 py-2">
+                <a class="text-white text-decoration-none" href="">
+                  Anonymous
+                </a>
+              </div>
+              <img
+                style="height: 300px; object-fit: cover; overflow: hidden"
+                src="./assets/images/aduan 5.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  beberapa siswa kedapatan merokok di lingkungan sekolah
+                </h5>
+                <small>
+                  by:
+                  <a class="text-decoration-none" href="">Anonymous</a>
+                  5 seconds ago
+                </small>
+                <p class="card-text mt-4">
+                  Berdasarkan sistem pengawasan internal sekolah yang menuntut
+                  penegakan kedisiplinan dan pembentukan karakter moral yang
+                  ketat, beberapa oknum siswa justru bertindak indisipliner dan
+                  mengabaikan tata tertib dengan kedapatan merokok di area
+                  lembaga pendidikan. Pelanggaran berat yang mencoreng citra
+                  institusi ini memicu keprihatinan mendalam dari pihak
+                  manajemen sekolah serta desakan akan pemberian sanksi tegas,
+                  yang menjadi satu-satunya instrumen utama dalam memberikan
+                  efek jera serta memulihkan lingkungan belajar yang bersih dan
+                  sehat.
+                </p>
+                <a href="#" class="btn btn-primary">selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="kategori position-absolute px-3 py-2">
+                <a class="text-white text-decoration-none" href="">
+                  Fasilitas
+                </a>
+              </div>
+              <img
+                style="height: 300px; object-fit: cover; overflow: hidden"
+                src="./assets/images/aduan 6.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ketiadaan Router WiFi di salah satu Ruang Kelas SMK Jurusan
+                  RPL Kelas 10
+                </h5>
+                <small>
+                  by:
+                  <a class="text-decoration-none" href="">Fasilitas</a>
+                  30 minutes ago
+                </small>
+                <p class="card-text mt-4">
+                  Laporan pengaduan ini diajukan terkait ketiadaan fasilitas
+                  jaringan internet berupa router WiFi di ruang kelas SMK
+                  jurusan Rekayasa Perangkat Lunak (RPL). Melalui aduan ini,
+                  pihak sarana dan prasarana sekolah diminta untuk segera
+                  menyediakan perangkat jaringan tersebut, mengingat akses
+                  internet yang stabil sangat krusial untuk menunjang kelancaran
+                  praktik pemrograman dan kegiatan belajar mengajar siswa.
+                </p>
+                <a href="#" class="btn btn-primary">selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="kategori position-absolute px-3 py-2">
+                <a class="text-white text-decoration-none" href="">
+                  Anonymous
+                </a>
+              </div>
+              <img
+                style="height: 300px; object-fit: cover; overflow: hidden"
+                src="./assets/images/aduan 4.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">fathan ketabrak motor</h5>
+                <small>
+                  by:
+                  <a class="text-decoration-none" href="">Anonymous</a>
+                  5 minutes ago
+                </small>
+                <p class="card-text mt-4">
+                  Berdasarkan situasi jalan raya yang rawan dan minim pengawasan
+                  terhadap pengendara di bawah umur, seorang anak bernama Fathan
+                  justru menjadi korban tabrakan fatal dari arah belakang saat
+                  sedang berada di jalur tersebut. Insiden traumatis yang
+                  terekam dalam dokumentasi visual ini memperlihatkan
+                  detik-detik sebelum benturan keras terjadi, memicu
+                  keprihatinan mendalam publik serta desakan atas
+                  pertanggungjawaban penuh dari pihak pengendara motor yang
+                  lalai.
+                </p>
+                <a href="detail-report.html" class="btn btn-primary">
+                  selengkapnya
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="kategori position-absolute px-3 py-2">
+                <a class="text-white text-decoration-none" href="">
+                  Anonymous
+                </a>
+              </div>
+              <img
+                style="height: 300px; object-fit: cover; overflow: hidden"
+                src="./assets/images/aduan 5.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  beberapa siswa kedapatan merokok di lingkungan sekolah
+                </h5>
+                <small>
+                  by:
+                  <a class="text-decoration-none" href="">Anonymous</a>
+                  5 seconds ago
+                </small>
+                <p class="card-text mt-4">
+                  Berdasarkan sistem pengawasan internal sekolah yang menuntut
+                  penegakan kedisiplinan dan pembentukan karakter moral yang
+                  ketat, beberapa oknum siswa justru bertindak indisipliner dan
+                  mengabaikan tata tertib dengan kedapatan merokok di area
+                  lembaga pendidikan. Pelanggaran berat yang mencoreng citra
+                  institusi ini memicu keprihatinan mendalam dari pihak
+                  manajemen sekolah serta desakan akan pemberian sanksi tegas,
+                  yang menjadi satu-satunya instrumen utama dalam memberikan
+                  efek jera serta memulihkan lingkungan belajar yang bersih dan
+                  sehat.
+                </p>
+                <a href="#" class="btn btn-primary">selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card">
+              <div class="kategori position-absolute px-3 py-2">
+                <a class="text-white text-decoration-none" href="">
+                  Fasilitas
+                </a>
+              </div>
+              <img
+                style="height: 300px; object-fit: cover; overflow: hidden"
+                src="./assets/images/aduan 6.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ketiadaan Router WiFi di salah satu Ruang Kelas SMK Jurusan
+                  RPL Kelas 10
+                </h5>
+                <small>
+                  by:
+                  <a class="text-decoration-none" href="">Fasilitas</a>
+                  30 minutes ago
+                </small>
+                <p class="card-text mt-4">
+                  Laporan pengaduan ini diajukan terkait ketiadaan fasilitas
+                  jaringan internet berupa router WiFi di ruang kelas SMK
+                  jurusan Rekayasa Perangkat Lunak (RPL). Melalui aduan ini,
+                  pihak sarana dan prasarana sekolah diminta untuk segera
+                  menyediakan perangkat jaringan tersebut, mengingat akses
+                  internet yang stabil sangat krusial untuk menunjang kelancaran
+                  praktik pemrograman dan kegiatan belajar mengajar siswa.
+                </p>
+                <a href="#" class="btn btn-primary">selengkapnya</a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white fw-semibold">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              <i class="fa-solid fa-pen-to-square"></i>
+              Formulir Tambah Laporan
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form action="">
+            <div class="modal-body p-5">
+              Laporkan Aduan anda!!!
+              <div class="mb-3">
+                <label class="form-label Fw-semibold" for="">
+                  Judul Laporan
+                </label>
+                <input
+                  class="form-control shadow-sm"
+                  type="text"
+                  placeholder="tulis judul laporan..."
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label Fw-semibold" for="">
+                  Pilih Kategori
+                </label>
+                <select class="form-select shadow-sm">
+                  <option value="">Pilih Kategori</option>
+                  <option value="pendidikan">Pendidikan</option>
+                  <option value="fasilitas">Fasilitas</option>
+                  <option value="anonymous">Anonymous</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label Fw-semibold" for="">
+                  Isi Laporan
+                </label>
+                <textarea
+                  rows="6"
+                  class="form-control shadow-sm"
+                  placeholder="Tulis Laporan Anda..."
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label class="form-label Fw-semibold" for="">
+                  Upload Gambar
+                </label>
+                <input
+                  class="form-control shadow-sm"
+                  type="file"
+                  accept="image/*"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-secondary">Reset</button>
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i> Kirim Sekarang
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer class="bg-primary-subtle">
-    <div class="container">
-      <div class="row py-5 row-gap-4 justify-content-between">
-        <div class="col-md-4 text-primary">
-          <div class="mb-2 d-flex align-items-center gap-2">
-            <img width="30" src="./assets/images/logo.png" alt="E-report IDN Logo" class=" d-inline-block align-text-top rounded">
-            <h3 class="mb-0 fw-bold">E-report IDN</h3>
+      <div class="container">
+        <div class="row py-5 row-gap-4 justify-content-between">
+          <div class="col-md-4 text-primary">
+            <div class="mb-2 d-flex align-items-center gap-2">
+              <img
+                width="30"
+                src="./assets/images/logo.png"
+                alt="E-report IDN Logo"
+                class="d-inline-block align-text-top rounded"
+              />
+              <h3 class="mb-0 fw-bold">E-report IDN</h3>
+            </div>
+            <p class="lh-lg m-0 opacity-75">
+              E-report IDN adalah platform pengaduan online yang memungkinkan
+              masyarakat untuk menyampaikan keluhan atau laporan terkait layanan
+              publik secara cepat dan efisien.
+            </p>
           </div>
-          <p class="lh-lg m-0 opacity-75">E-report IDN adalah platform pengaduan online yang memungkinkan masyarakat untuk menyampaikan keluhan atau laporan terkait layanan publik secara cepat dan efisien.</p>
+          <div class="col-md-3 text-primary mb-2 d-flex flex-column gap-1">
+            <h4 class="fw-bold">Menu</h4>
+            <a href="index.html#hero" class="text-decoration-none opacity-75">
+              Home
+            </a>
+            <a href="index.html#about" class="text-decoration-none opacity-75">
+              About
+            </a>
+            <a
+              href="index.html#contact"
+              class="text-decoration-none opacity-75"
+            >
+              Contact
+            </a>
+            <a
+              href="index.html#services"
+              class="text-decoration-none opacity-75"
+            >
+              Services
+            </a>
+            <a href="index.html#recent" class="text-decoration-none opacity-75">
+              Recent
+            </a>
+            <a href="index.html#FAQ" class="text-decoration-none opacity-75">
+              FAQ
+            </a>
+            <a href="panduan.html" class="text-decoration-none opacity-75">
+              Guide
+            </a>
+          </div>
+          <div class="col-md-4 text-primary mb-2 d-flex flex-column gap-2">
+            <h4 class="fw-bold">Contact</h4>
+            <a
+              class="d-flex align-items-center text-decoration-none gap-3"
+              target="_blank"
+              href="mailto:inimikhail15@gmail.com"
+            >
+              <i class="fa-solid fa-envelope me-2"></i>
+              inimikhail15@gmail.com
+            </a>
+            <a
+              class="d-flex align-items-center text-decoration-none gap-3"
+              target="_blank"
+              href="https://wa.me/6285177581380"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+              +62 851-7758-1380
+            </a>
+            <a
+              class="d-flex align-items-center text-decoration-none gap-3"
+              target="_blank"
+              href="https://www.google.com/maps/dir/-6.5253396,107.0381069/SMP+%26+SMK+IDN+Boarding+School,+Jl.+Raya+Jonggol-Dayeuh,+Sukanegara,+Jonggol,+Bogor+Regency,+West+Java+16830/@-6.5253467,107.0353586,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69bc6e5be3d9bd:0x6b9881dabd801476!2m2!1d107.0381356!2d-6.5252823?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D"
+            >
+              <i class="fa-solid fa-map-location-dot"></i>
+              Jl. Raya Jonggol-Dayeuh, Sukanegara, Jonggol, Bogor Regency, West
+              Java 16830
+            </a>
+          </div>
         </div>
-        <div class="col-md-3 text-primary mb-2 d-flex flex-column gap-1">
-          <h4 class="fw-bold">Menu</h4>
-          <a href="index.html#hero" class="text-decoration-none opacity-75 ">Home</a>
-          <a href="index.html#about" class="text-decoration-none opacity-75">About</a>
-          <a href="index.html#contact" class="text-decoration-none opacity-75">Contact</a>
-          <a href="index.html#services" class="text-decoration-none opacity-75">Services</a>
-          <a href="index.html#recent" class="text-decoration-none opacity-75">Recent</a>
-          <a href="index.html#FAQ" class="text-decoration-none opacity-75">FAQ</a>
+        <div class="copyright text-primary text-center">
+          <p>
+            &copy; Copyright by
+            <span class="fw-bold">Mikhail Aqeela Hassan</span> 2026, All Rights
+            Reserved.
+          </p>
         </div>
-
-        <div class="col-md-4 text-primary mb-2 d-flex flex-column gap-2">
-          <h4 class="fw-bold">Contact</h4>
-          <a class="d-flex align-items-center text-decoration-none gap-3" target="_blank" href="mailto:inimikhail15@gmail.com">
-            <i class="fa-solid fa-envelope me-2"></i>
-            inimikhail15@gmail.com
-          </a>
-          <a class="d-flex align-items-center text-decoration-none gap-3" target="_blank" href="https://wa.me/6285177581380">
-            <i class="fa-brands fa-whatsapp"></i>
-            +62 851-7758-1380
-          </a>
-          <a class="d-flex align-items-center text-decoration-none gap-3" target="_blank" href="https://www.google.com/maps/dir/-6.5253396,107.0381069/SMP+%26+SMK+IDN+Boarding+School,+Jl.+Raya+Jonggol-Dayeuh,+Sukanegara,+Jonggol,+Bogor+Regency,+West+Java+16830/@-6.5253467,107.0353586,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x2e69bc6e5be3d9bd:0x6b9881dabd801476!2m2!1d107.0381356!2d-6.5252823?entry=ttu&g_ep=EgoyMDI2MDkxMy4wIKXMDSoASAFQAw%3D%3D">
-            <i class="fa-solid fa-map-location-dot"></i>
-            Jl. Raya Jonggol-Dayeuh, Sukanegara, Jonggol, Bogor Regency, West Java 16830
-          </a>
       </div>
-    </div>
-    <div class="copyright text-primary text-center">
-      <p>&copy; Copyright by <span class="fw-bold">Mikhail Aqeela Hassan</span> 2026, All Rights Reserved.</p>
-    </div>
-  </div>
     </footer>
-
 
     <!-- js bootstrap -->
     <script
@@ -381,14 +690,15 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
+
     <!-- cdn aos.css -->
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-      <!-- cdn aos js -->
-       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- cdn aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-      <script>
-  AOS.init();
-</script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
