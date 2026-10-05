@@ -89,6 +89,13 @@
             <li class="nav-item">
               <a class="nav-link text-primary" href="panduan.html">Guide</a>
             </li>
+            <li class="nav-item d-flex align-items-center ms-lg-2">
+              <div class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+                <div class="toggle-track">
+                  <div class="toggle-thumb"></div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -460,15 +467,11 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the first items accordion body.</strong>
-                    It is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <p>
+                      Tidak. Identitas pelapor anonymous dijamin kerahasiaannya
+                      oleh sistem kami. Data Anda dienkripsi dan tidak akan
+                      dibagikan ke pihak manapun tanpa persetujuan Anda.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -533,15 +536,12 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the first items accordion body.</strong>
-                    It is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <p>
+                      Tidak. Melaporkan kejadian adalah hak setiap warga negara
+                      dan dilindungi oleh undang-undang. Selama laporan Anda
+                      berdasarkan fakta dan tidak bersifat fitnah, Anda tidak
+                      akan mendapat masalah hukum.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -571,15 +571,11 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the first items accordion body.</strong>
-                    It is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <p>
+                      Ya, data Anda aman. Kami menggunakan sistem keamanan
+                      terenkripsi untuk melindungi seluruh informasi pribadi
+                      dan laporan yang Anda kirimkan melalui platform ini.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -609,15 +605,11 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the first items accordion body.</strong>
-                    It is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <p>
+                      Laporan yang dikirim secara anonymous tidak dapat dilacak
+                      kembali ke pelapor. Sistem kami tidak menyimpan data
+                      identitas pada laporan bertipe anonymous.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -736,6 +728,27 @@
 
     <script>
       AOS.init();
+    </script>
+
+    <!-- Dark Mode Script -->
+    <script>
+      (function() {
+        const toggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('bs-theme');
+        if (savedTheme) {
+          html.setAttribute('data-bs-theme', savedTheme);
+        }
+
+        toggle.addEventListener('click', function() {
+          const current = html.getAttribute('data-bs-theme');
+          const next = current === 'dark' ? 'light' : 'dark';
+          html.setAttribute('data-bs-theme', next);
+          localStorage.setItem('bs-theme', next);
+        });
+      })();
     </script>
   </body>
 </html>

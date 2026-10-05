@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hero .col img {
@@ -41,4 +42,209 @@ footer {
 .copyright {
     margin-top: 100px;
     padding-bottom: 20px;
+}
+
+/* ===== Dark Mode Toggle Switch ===== */
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dark-mode-toggle .toggle-track {
+    position: relative;
+    width: 50px;
+    height: 26px;
+    background: linear-gradient(135deg, #cfe2ff, #9ec5fe);
+    border-radius: 50px;
+    transition: background 0.4s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.dark-mode-toggle .toggle-thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.4s cubic-bezier(0.68, -0.15, 0.27, 1.15), background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.dark-mode-toggle .toggle-thumb::after {
+    content: '\2600'; /* ☀ sun */
+    font-size: 12px;
+}
+
+[data-bs-theme="dark"] .dark-mode-toggle .toggle-track {
+    background: linear-gradient(135deg, #1a1d3e, #2d325a);
+}
+
+[data-bs-theme="dark"] .dark-mode-toggle .toggle-thumb {
+    transform: translateX(24px);
+    background: #ffc107;
+}
+
+[data-bs-theme="dark"] .dark-mode-toggle .toggle-thumb::after {
+    content: '\263E'; /* ☾ moon */
+    font-size: 12px;
+}
+
+/* smooth transitions for themed elements */
+.navbar, .card, .accordion-item, .accordion-button, footer,
+.modal-content, .form-control, .form-select, .btn {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Remove white background from undraw illustrations in dark mode */
+[data-bs-theme="dark"] .hero .col img,
+[data-bs-theme="dark"] .about .col img {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+/* ===== Premium Clean Layout ===== */
+.timeline-card {
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.1) !important;
+}
+
+/* Dark mode overrides for cards */
+[data-bs-theme="dark"] .timeline-card {
+    background-color: #2b3035 !important;
+}
+[data-bs-theme="dark"] .timeline-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Elegant circle styling */
+.timeline-circle {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+    position: relative;
+}
+/* Subtle elegant breathing aura */
+.timeline-circle::after {
+    content: '';
+    position: absolute;
+    top: -4px; left: -4px; right: -4px; bottom: -4px;
+    border-radius: 50%;
+    border: 2px solid rgba(13, 110, 253, 0.4);
+    animation: breath-ring 3s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+    pointer-events: none;
+}
+@keyframes breath-ring {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: scale(1.4); opacity: 0; }
+}
+
+.timeline-card:hover + .timeline-circle,
+.timeline-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.4);
+}
+
+[data-bs-theme="dark"] .timeline-circle {
+    border-color: #212529 !important;
+}
+
+/* Icon simple scale and continuous float */
+.timeline-icon {
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    display: inline-block;
+    animation: gentle-float 4s ease-in-out infinite;
+}
+@keyframes gentle-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+.timeline-card:hover .timeline-icon {
+    animation-play-state: paused;
+    transform: scale(1.15) translateY(-3px);
+}
+
+/* Elegant flowing center line */
+.timeline-line {
+    background: linear-gradient(180deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 110, 253, 0.7) 50%, rgba(13, 110, 253, 0.1) 100%);
+    background-size: 100% 200%;
+    animation: slow-flow 4s linear infinite;
+    width: 3px;
+    border: none !important;
+}
+@keyframes slow-flow {
+    0% { background-position: 0% -100%; }
+    100% { background-position: 0% 100%; }
+}
+
+/* Very subtle background orbs */
+.cinema-orbs-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+}
+.orb-1, .orb-2 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.15;
+}
+.orb-1 {
+    width: 500px; height: 500px;
+    background: #0d6efd;
+    top: -10%; left: -5%;
+}
+.orb-2 {
+    width: 400px; height: 400px;
+    background: #0dcaf0;
+    bottom: -10%; right: -5%;
+}
+
+[data-bs-theme="dark"] .orb-1, 
+[data-bs-theme="dark"] .orb-2 {
+    opacity: 0.08;
+}
+
+/* Premium Glassmorphism Cards */
+.glass-card {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.8);
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.glass-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-color: rgba(13, 110, 253, 0.2);
+}
+
+[data-bs-theme="dark"] .glass-card {
+    background: rgba(43, 48, 53, 0.4) !important;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+[data-bs-theme="dark"] .glass-card:hover {
+    background: rgba(43, 48, 53, 0.7) !important;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    border-color: rgba(13, 110, 253, 0.3);
 }

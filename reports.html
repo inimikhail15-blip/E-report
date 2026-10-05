@@ -89,6 +89,13 @@
             <li class="nav-item">
               <a class="nav-link text-primary" href="panduan.html">Guide</a>
             </li>
+            <li class="nav-item d-flex align-items-center ms-lg-2">
+              <div class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+                <div class="toggle-track">
+                  <div class="toggle-thumb"></div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -224,7 +231,7 @@
                   mengkhawatirkan keamanan atau identitas pelapor yang
                   dirahasiakan.
                 </p>
-                <a href="#" class="btn btn-primary">selengkapnya</a>
+                <a href="detail-report-4.html" class="btn btn-primary">selengkapnya</a>
               </div>
             </div>
           </div>
@@ -336,7 +343,7 @@
                   efek jera serta memulihkan lingkungan belajar yang bersih dan
                   sehat.
                 </p>
-                <a href="#" class="btn btn-primary">selengkapnya</a>
+                <a href="detail-report-5.html" class="btn btn-primary">selengkapnya</a>
               </div>
             </div>
           </div>
@@ -372,7 +379,7 @@
                   internet yang stabil sangat krusial untuk menunjang kelancaran
                   praktik pemrograman dan kegiatan belajar mengajar siswa.
                 </p>
-                <a href="#" class="btn btn-primary">selengkapnya</a>
+                <a href="detail-report-6.html" class="btn btn-primary">selengkapnya</a>
               </div>
             </div>
           </div>
@@ -447,7 +454,7 @@
                   efek jera serta memulihkan lingkungan belajar yang bersih dan
                   sehat.
                 </p>
-                <a href="#" class="btn btn-primary">selengkapnya</a>
+                <a href="detail-report-5.html" class="btn btn-primary">selengkapnya</a>
               </div>
             </div>
           </div>
@@ -483,7 +490,7 @@
                   internet yang stabil sangat krusial untuk menunjang kelancaran
                   praktik pemrograman dan kegiatan belajar mengajar siswa.
                 </p>
-                <a href="#" class="btn btn-primary">selengkapnya</a>
+                <a href="detail-report-6.html" class="btn btn-primary">selengkapnya</a>
               </div>
             </div>
           </div>
@@ -699,6 +706,26 @@
 
     <script>
       AOS.init();
+    </script>
+
+    <!-- Dark Mode Script -->
+    <script>
+      (function() {
+        const toggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        const savedTheme = localStorage.getItem('bs-theme');
+        if (savedTheme) {
+          html.setAttribute('data-bs-theme', savedTheme);
+        }
+
+        toggle.addEventListener('click', function() {
+          const current = html.getAttribute('data-bs-theme');
+          const next = current === 'dark' ? 'light' : 'dark';
+          html.setAttribute('data-bs-theme', next);
+          localStorage.setItem('bs-theme', next);
+        });
+      })();
     </script>
   </body>
 </html>

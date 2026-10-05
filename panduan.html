@@ -89,16 +89,28 @@
             <li class="nav-item">
               <a class="nav-link text-primary" href="panduan.html">Guide</a>
             </li>
+            <li class="nav-item d-flex align-items-center ms-lg-2">
+              <div class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+                <div class="toggle-track">
+                  <div class="toggle-thumb"></div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- konten utama -->
-    <section class="py-5 mb-5 overflow-hidden" style="min-height: 70vh">
+    <section class="py-5 mb-5 overflow-hidden position-relative" style="min-height: 70vh">
+      <div class="cinema-orbs-container">
+        <div class="orb-1"></div>
+        <div class="orb-2"></div>
+        <div class="orb-3"></div>
+      </div>
       <div class="container">
-        <div class="text-center mb-5" data-aos="fade-down">
-          <h1 class="text-primary fw-bold display-5 mb-3">Alur Pelaporan</h1>
+        <div class="text-center mb-5 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+          <h1 class="fw-bold display-5 mb-3 text-primary">Alur Pelaporan</h1>
           <p class="text-muted lead">
             Sampaikan aspirasi dan keluhan Anda dalam 4 langkah mudah tanpa
             perlu mendaftar.
@@ -108,12 +120,12 @@
         <div class="row position-relative mt-5 pt-3">
           <!-- Garis vertikal timeline -->
           <div
-            class="d-none d-md-block position-absolute h-100 border-start border-3 border-primary opacity-25"
+            class="d-none d-md-block position-absolute h-100 timeline-line"
             style="left: 50%; transform: translateX(-50%)"
           ></div>
 
           <!-- Step 1 -->
-          <div class="row align-items-center mb-5" data-aos="fade-right">
+          <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-delay="800">
             <div class="col-md-5 text-md-end">
               <h3 class="fw-bold text-primary">Tulis Laporan</h3>
               <p class="text-muted">
@@ -123,7 +135,7 @@
             </div>
             <div class="col-md-2 text-center my-3 my-md-0">
               <div
-                class="d-inline-flex align-items-center justify-content-center text-white bg-primary rounded-circle shadow"
+                class="d-inline-flex align-items-center justify-content-center text-white bg-primary rounded-circle shadow timeline-circle"
                 style="
                   width: 70px;
                   height: 70px;
@@ -138,9 +150,9 @@
             </div>
             <div class="col-md-5">
               <div
-                class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-primary"
+                class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-primary timeline-card"
               >
-                <i class="fa-solid fa-pen-to-square fs-2 text-primary mb-2"></i>
+                <i class="fa-solid fa-pen-to-square fs-2 text-primary mb-2 timeline-icon"></i>
                 <h5 class="fw-semibold">Deskripsi Jelas</h5>
                 <p class="text-muted small mb-0">
                   Pastikan informasi yang disampaikan valid dan tidak mengandung
@@ -164,7 +176,7 @@
             </div>
             <div class="col-md-2 text-center my-3 my-md-0">
               <div
-                class="d-inline-flex align-items-center justify-content-center text-white bg-primary rounded-circle shadow"
+                class="d-inline-flex align-items-center justify-content-center text-white bg-primary rounded-circle shadow timeline-circle"
                 style="
                   width: 70px;
                   height: 70px;
@@ -179,9 +191,9 @@
             </div>
             <div class="col-md-5 text-md-end">
               <div
-                class="p-4 bg-white rounded-4 shadow-sm border-end border-4 border-primary"
+                class="p-4 bg-white rounded-4 shadow-sm border-end border-4 border-primary timeline-card"
               >
-                <i class="fa-solid fa-image fs-2 text-primary mb-2"></i>
+                <i class="fa-solid fa-image fs-2 text-primary mb-2 timeline-icon"></i>
                 <h5 class="fw-semibold">Bukti Autentik</h5>
                 <p class="text-muted small mb-0">
                   Semakin jelas bukti yang diberikan, semakin cepat proses
@@ -202,7 +214,7 @@
             </div>
             <div class="col-md-2 text-center my-3 my-md-0">
               <div
-                class="d-inline-flex align-items-center justify-content-center text-white bg-primary rounded-circle shadow"
+                class="d-inline-flex align-items-center justify-content-center text-white bg-primary rounded-circle shadow timeline-circle"
                 style="
                   width: 70px;
                   height: 70px;
@@ -217,9 +229,9 @@
             </div>
             <div class="col-md-5">
               <div
-                class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-primary"
+                class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-primary timeline-card"
               >
-                <i class="fa-solid fa-ticket-simple fs-2 text-primary mb-2"></i>
+                <i class="fa-solid fa-ticket-simple fs-2 text-primary mb-2 timeline-icon"></i>
                 <h5 class="fw-semibold">Kode Pelacakan</h5>
                 <p class="text-muted small mb-0">
                   Nomor tiket ini ibarat resi yang membuktikan bahwa laporan
@@ -240,7 +252,7 @@
             </div>
             <div class="col-md-2 text-center my-3 my-md-0">
               <div
-                class="d-inline-flex align-items-center justify-content-center text-white bg-primary rounded-circle shadow"
+                class="d-inline-flex align-items-center justify-content-center text-white bg-primary rounded-circle shadow timeline-circle"
                 style="
                   width: 70px;
                   height: 70px;
@@ -255,10 +267,10 @@
             </div>
             <div class="col-md-5 text-md-end">
               <div
-                class="p-4 bg-white rounded-4 shadow-sm border-end border-4 border-primary"
+                class="p-4 bg-white rounded-4 shadow-sm border-end border-4 border-primary timeline-card"
               >
                 <i
-                  class="fa-solid fa-magnifying-glass-chart fs-2 text-primary mb-2"
+                  class="fa-solid fa-magnifying-glass-chart fs-2 text-primary mb-2 timeline-icon"
                 ></i>
                 <h5 class="fw-semibold">Transparansi Penuh</h5>
                 <p class="text-muted small mb-0">
@@ -275,30 +287,25 @@
           <div
             class="bg-primary-subtle p-4 p-md-5 rounded-5 position-relative overflow-hidden shadow-sm border border-primary border-opacity-10"
           >
-            <!-- decorative circles -->
-            <div
-              class="position-absolute rounded-circle bg-primary opacity-10"
-              style="width: 250px; height: 250px; top: -80px; right: -80px"
-            ></div>
-            <div
-              class="position-absolute rounded-circle bg-primary opacity-10"
-              style="width: 150px; height: 150px; bottom: -30px; left: -30px"
-            ></div>
+            <!-- center glow light for dark mode -->
+            <div class="cinema-orbs-container">
+                <div class="orb-etik"></div>
+            </div>
 
             <div class="position-relative z-1">
-              <h3 class="text-primary fw-bold mb-4 text-center">
+              <h3 class="fw-bold mb-4 text-center text-primary">
                 Kode Etik Pelapor
               </h3>
               <div class="row g-4 mt-2">
                 <div class="col-md-4">
                   <div
-                    class="d-flex align-items-start gap-3 bg-white p-3 rounded-4 h-100 shadow-sm"
+                    class="d-flex align-items-start gap-3 p-4 rounded-4 h-100 shadow-sm glass-card"
                   >
                     <div class="text-primary fs-3">
                       <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <div>
-                      <h6 class="fw-bold mb-1 text-dark">Objektif & Jujur</h6>
+                      <h6 class="fw-bold mb-1 text-body-emphasis">Objektif & Jujur</h6>
                       <p class="text-muted small mb-0">
                         Laporan harus berdasarkan fakta riil, bukan sekadar
                         opini atau asumsi.
@@ -308,13 +315,13 @@
                 </div>
                 <div class="col-md-4">
                   <div
-                    class="d-flex align-items-start gap-3 bg-white p-3 rounded-4 h-100 shadow-sm"
+                    class="d-flex align-items-start gap-3 p-4 rounded-4 h-100 shadow-sm glass-card"
                   >
                     <div class="text-primary fs-3">
                       <i class="fa-solid fa-ban"></i>
                     </div>
                     <div>
-                      <h6 class="fw-bold mb-1 text-dark">Anti SARA & Hoaks</h6>
+                      <h6 class="fw-bold mb-1 text-body-emphasis">Anti SARA & Hoaks</h6>
                       <p class="text-muted small mb-0">
                         Pastikan laporan bebas dari kebencian terhadap Suku,
                         Agama, dan Ras.
@@ -324,13 +331,13 @@
                 </div>
                 <div class="col-md-4">
                   <div
-                    class="d-flex align-items-start gap-3 bg-white p-3 rounded-4 h-100 shadow-sm"
+                    class="d-flex align-items-start gap-3 p-4 rounded-4 h-100 shadow-sm glass-card"
                   >
                     <div class="text-primary fs-3">
                       <i class="fa-solid fa-user-secret"></i>
                     </div>
                     <div>
-                      <h6 class="fw-bold mb-1 text-dark">Jaga Privasi</h6>
+                      <h6 class="fw-bold mb-1 text-body-emphasis">Jaga Privasi</h6>
                       <p class="text-muted small mb-0">
                         Jangan menyebarkan data pribadi pihak lain yang tidak
                         berkaitan.
@@ -453,7 +460,31 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 800,
+        offset: 50,
+      });
+    </script>
+
+    <!-- Dark Mode Script -->
+    <script>
+      (function() {
+        const toggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        const savedTheme = localStorage.getItem('bs-theme');
+        if (savedTheme) {
+          html.setAttribute('data-bs-theme', savedTheme);
+        }
+
+        toggle.addEventListener('click', function() {
+          const current = html.getAttribute('data-bs-theme');
+          const next = current === 'dark' ? 'light' : 'dark';
+          html.setAttribute('data-bs-theme', next);
+          localStorage.setItem('bs-theme', next);
+        });
+      })();
     </script>
   </body>
 </html>
