@@ -90,7 +90,11 @@
               <a class="nav-link text-primary" href="panduan.html">Guide</a>
             </li>
             <li class="nav-item d-flex align-items-center ms-lg-2">
-              <div class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+              <div
+                class="dark-mode-toggle"
+                id="darkModeToggle"
+                title="Toggle Dark Mode"
+              >
                 <div class="toggle-track">
                   <div class="toggle-thumb"></div>
                 </div>
@@ -102,14 +106,20 @@
     </nav>
 
     <!-- konten utama -->
-    <section class="py-5 mb-5 overflow-hidden position-relative" style="min-height: 70vh">
+    <section
+      class="py-5 mb-5 overflow-hidden position-relative"
+      style="min-height: 70vh"
+    >
       <div class="cinema-orbs-container">
         <div class="orb-1"></div>
         <div class="orb-2"></div>
         <div class="orb-3"></div>
       </div>
       <div class="container">
-        <div class="text-center mb-5 animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+        <div
+          class="text-center mb-5 animate__animated animate__fadeInUp"
+          style="animation-delay: 0.5s"
+        >
           <h1 class="fw-bold display-5 mb-3 text-primary">Alur Pelaporan</h1>
           <p class="text-muted lead">
             Sampaikan aspirasi dan keluhan Anda dalam 4 langkah mudah tanpa
@@ -125,7 +135,11 @@
           ></div>
 
           <!-- Step 1 -->
-          <div class="row align-items-center mb-5" data-aos="fade-right" data-aos-delay="800">
+          <div
+            class="row align-items-center mb-5"
+            data-aos="fade-right"
+            data-aos-delay="800"
+          >
             <div class="col-md-5 text-md-end">
               <h3 class="fw-bold text-primary">Tulis Laporan</h3>
               <p class="text-muted">
@@ -152,7 +166,9 @@
               <div
                 class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-primary timeline-card"
               >
-                <i class="fa-solid fa-pen-to-square fs-2 text-primary mb-2 timeline-icon"></i>
+                <i
+                  class="fa-solid fa-pen-to-square fs-2 text-primary mb-2 timeline-icon"
+                ></i>
                 <h5 class="fw-semibold">Deskripsi Jelas</h5>
                 <p class="text-muted small mb-0">
                   Pastikan informasi yang disampaikan valid dan tidak mengandung
@@ -193,7 +209,9 @@
               <div
                 class="p-4 bg-white rounded-4 shadow-sm border-end border-4 border-primary timeline-card"
               >
-                <i class="fa-solid fa-image fs-2 text-primary mb-2 timeline-icon"></i>
+                <i
+                  class="fa-solid fa-image fs-2 text-primary mb-2 timeline-icon"
+                ></i>
                 <h5 class="fw-semibold">Bukti Autentik</h5>
                 <p class="text-muted small mb-0">
                   Semakin jelas bukti yang diberikan, semakin cepat proses
@@ -231,7 +249,9 @@
               <div
                 class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-primary timeline-card"
               >
-                <i class="fa-solid fa-ticket-simple fs-2 text-primary mb-2 timeline-icon"></i>
+                <i
+                  class="fa-solid fa-ticket-simple fs-2 text-primary mb-2 timeline-icon"
+                ></i>
                 <h5 class="fw-semibold">Kode Pelacakan</h5>
                 <p class="text-muted small mb-0">
                   Nomor tiket ini ibarat resi yang membuktikan bahwa laporan
@@ -289,7 +309,7 @@
           >
             <!-- center glow light for dark mode -->
             <div class="cinema-orbs-container">
-                <div class="orb-etik"></div>
+              <div class="orb-etik"></div>
             </div>
 
             <div class="position-relative z-1">
@@ -305,7 +325,9 @@
                       <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <div>
-                      <h6 class="fw-bold mb-1 text-body-emphasis">Objektif & Jujur</h6>
+                      <h6 class="fw-bold mb-1 text-body-emphasis">
+                        Objektif & Jujur
+                      </h6>
                       <p class="text-muted small mb-0">
                         Laporan harus berdasarkan fakta riil, bukan sekadar
                         opini atau asumsi.
@@ -321,7 +343,9 @@
                       <i class="fa-solid fa-ban"></i>
                     </div>
                     <div>
-                      <h6 class="fw-bold mb-1 text-body-emphasis">Anti SARA & Hoaks</h6>
+                      <h6 class="fw-bold mb-1 text-body-emphasis">
+                        Anti SARA & Hoaks
+                      </h6>
                       <p class="text-muted small mb-0">
                         Pastikan laporan bebas dari kebencian terhadap Suku,
                         Agama, dan Ras.
@@ -337,7 +361,9 @@
                       <i class="fa-solid fa-user-secret"></i>
                     </div>
                     <div>
-                      <h6 class="fw-bold mb-1 text-body-emphasis">Jaga Privasi</h6>
+                      <h6 class="fw-bold mb-1 text-body-emphasis">
+                        Jaga Privasi
+                      </h6>
                       <p class="text-muted small mb-0">
                         Jangan menyebarkan data pribadi pihak lain yang tidak
                         berkaitan.
@@ -379,12 +405,6 @@
             </a>
             <a href="index.html#about" class="text-decoration-none opacity-75">
               About
-            </a>
-            <a
-              href="index.html#contact"
-              class="text-decoration-none opacity-75"
-            >
-              Contact
             </a>
             <a
               href="index.html#services"
@@ -469,20 +489,20 @@
 
     <!-- Dark Mode Script -->
     <script>
-      (function() {
-        const toggle = document.getElementById('darkModeToggle');
+      (function () {
+        const toggle = document.getElementById("darkModeToggle");
         const html = document.documentElement;
 
-        const savedTheme = localStorage.getItem('bs-theme');
+        const savedTheme = localStorage.getItem("bs-theme");
         if (savedTheme) {
-          html.setAttribute('data-bs-theme', savedTheme);
+          html.setAttribute("data-bs-theme", savedTheme);
         }
 
-        toggle.addEventListener('click', function() {
-          const current = html.getAttribute('data-bs-theme');
-          const next = current === 'dark' ? 'light' : 'dark';
-          html.setAttribute('data-bs-theme', next);
-          localStorage.setItem('bs-theme', next);
+        toggle.addEventListener("click", function () {
+          const current = html.getAttribute("data-bs-theme");
+          const next = current === "dark" ? "light" : "dark";
+          html.setAttribute("data-bs-theme", next);
+          localStorage.setItem("bs-theme", next);
         });
       })();
     </script>
